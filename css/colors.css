@@ -1,0 +1,10 @@
+body {
+    --background: #f6f6fe;
+    --background-linear: linear-gradient(#a3a8f0, #696fdd);
+    --switch-hover: linear-gradient(#a3a8f070, #696fdd7c);
+    --gray: #6d708d;
+    --dark-gray: #494c5f;
+    --light-gray: #b3b5c6;
+    --card-shadow: #b3b5c633;
+    --separator: #f3f3f33a;
+}

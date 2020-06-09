@@ -1,0 +1,16 @@
+
+@keyframes fade-in {
+	100% {opacity: 1}
+}
+
+@keyframes reveal-down {
+    to {
+		height: 348.117px;
+		opacity: 1;
+	}
+}
+@keyframes scale {
+	to {
+		transform: scale(1.1,1.1);
+	}
+}

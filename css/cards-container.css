@@ -1,0 +1,89 @@
+@import "colors.css";
+
+.cards-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.card {
+    flex: 0 1 250px;
+    padding: 30px 3vw;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px var(--card-shadow);
+}
+
+/* middle card */
+.middle-card {
+    background: var(--background-linear);
+    color: white;
+    /* to be animated */
+    height: 0; opacity: 0; 
+    z-index: 1;
+}
+.side-card {
+    /* to be animated */
+    opacity: 0;
+}
+
+/* hr */
+.card hr {
+    border-width: 2px 0 0;
+    border-style: solid;
+    border-color: var(--separator);
+}
+
+.side-card hr {
+    border-color: var(--card-shadow);
+}
+
+
+/* excluding middle card's text */
+.side-card h4 {
+    color: var(--gray);
+}
+
+.side-card h3,
+.side-card h1 {
+    color: var(--dark-gray);
+}
+
+/* Learn More */
+.card a {
+    display: inline-block;
+    width: 100%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    margin-top: 4vh;
+    background: var(--background-linear);
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    transition: all 1ms linear;
+    text-decoration: none;
+}
+
+.card a:hover {
+    cursor: pointer;
+    background: transparent;
+    color: #696fdd;
+    outline: 1px solid #696fdd;
+}
+
+.card a:active {
+    transform: scale(0.99, 0.99);
+    box-shadow: 0 5px 5px #47474750;
+}
+
+.middle-card a {
+    background: white;
+    color: #696fdd;
+}
+
+.middle-card a:hover {
+    color: white;
+    outline-color: white;
+}

@@ -1,0 +1,42 @@
+@import "./colors.css";
+
+.switch {
+	margin: auto 10px;
+	display: inline-block;
+	width: 45px;
+	height: 22px;
+	border: none;
+	background: var(--background-linear);
+	position: relative;
+	vertical-align: middle;
+}
+
+.switch::before {
+	content: "";
+	margin: 3px;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	position: absolute; top: 0; bottom: 0; left: 0;/* vertically center-align */
+	background: #f5f7ff;
+	-webkit-transition: all 0.2s cubic-bezier(0, 0.9, 0.99, 1);
+	transition: all 0.2s cubic-bezier(0, 0.9, 0.99, 1);
+}
+.switch, .switch::before {
+	border-radius: 20px;
+}
+.switch:hover {
+	cursor: pointer;
+	background: var(--switch-hover);
+}
+
+/* Switch pricing plan */
+input[type="checkbox"]:checked+.switch::before {
+	transform: translateX(23px);
+}
+input[type="checkbox"]:checked ~ .cards-container .annually {
+	display: none;
+}
+input[type="checkbox"]:checked ~ .cards-container .monthly {
+	display: initial !important;
+}
