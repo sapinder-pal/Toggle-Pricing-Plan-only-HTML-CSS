@@ -1,16 +1,34 @@
-
+@-webkit-keyframes fade-in {
+	100% {opacity: 1}
+}
 @keyframes fade-in {
 	100% {opacity: 1}
 }
 
+
+@-webkit-keyframes reveal-down {
+    to {
+		height: 348.117px;
+		opacity: 1;
+	}
+}
 @keyframes reveal-down {
     to {
 		height: 348.117px;
 		opacity: 1;
 	}
 }
+
+
+@-webkit-keyframes scale {
+	to {
+		-webkit-transform: scale(1.1,1.1);
+		        transform: scale(1.1,1.1);
+	}
+}
 @keyframes scale {
 	to {
-		transform: scale(1.1,1.1);
+		-webkit-transform: scale(1.1,1.1);
+		        transform: scale(1.1,1.1);
 	}
 }

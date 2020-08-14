@@ -1,18 +1,30 @@
 @import "colors.css";
 
 .cards-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+		display: flex;
+		
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+						flex-flow: row wrap;
+						
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 50px auto;
 }
 
 .card {
-    flex: 0 1 250px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 250px;
+            flex: 0 1 250px;
     padding: 30px 3vw;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 0 15px var(--card-shadow);
+    -webkit-box-shadow: 0 0 15px var(--card-shadow);
+            box-shadow: 0 0 15px var(--card-shadow);
 }
 
 /* middle card */
@@ -61,8 +73,12 @@
     font-size: 0.8em;
     text-transform: uppercase;
     color: white;
-    letter-spacing: 2px;
-    transition: all 1ms linear;
+		letter-spacing: 2px;
+		
+    -webkit-transition: all 1ms linear;
+    -o-transition: all 1ms linear;
+		transition: all 1ms linear;
+		
     text-decoration: none;
 }
 
@@ -74,8 +90,12 @@
 }
 
 .card a:active {
-    transform: scale(0.99, 0.99);
-    box-shadow: 0 5px 5px #47474750;
+    -webkit-transform: scale(0.99, 0.99);
+        -ms-transform: scale(0.99, 0.99);
+						transform: scale(0.99, 0.99);
+						
+    -webkit-box-shadow: 0 5px 5px #47474750;
+            box-shadow: 0 5px 5px #47474750;
 }
 
 .middle-card a {

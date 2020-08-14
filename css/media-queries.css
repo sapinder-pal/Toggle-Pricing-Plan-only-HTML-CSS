@@ -2,19 +2,24 @@
 
 @media (min-width: 935px) {
     .middle-card {
-		animation: reveal-down .5s 2s cubic-bezier(.68, -0.55, .27, 1.55) forwards,
-					scale .2s 2.8s cubic-bezier(.68, -0.55, .27, 1.55) forwards;
+		-webkit-animation: reveal-down .5s 2s cubic-bezier(.68, -0.55, .27, 1.55) forwards,
+												scale .2s 2.8s cubic-bezier(.68, -0.55, .27, 1.55) forwards;
+			animation: reveal-down .5s 2s cubic-bezier(.68, -0.55, .27, 1.55) forwards,
+									scale .2s 2.8s cubic-bezier(.68, -0.55, .27, 1.55) forwards;
     }
 
     .side-card {
-        animation: fade-in 1s 1s ease-out forwards;
+        -webkit-animation: fade-in 1s 1s ease-out forwards;
+                animation: fade-in 1s 1s ease-out forwards;
     }
 
 }
 
 @media (max-width: 934px) {
     .cards-container {
-        justify-content: space-evenly;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
         gap: 5%;
         padding-left: 5%;
         padding-right: 5%;
@@ -22,12 +27,15 @@
 
     .middle-card {
         height: 348.117px;
-        transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+            -ms-transform: scale(1, 1);
+                transform: scale(1, 1);
 	}
 	.side-card {
 		height: 0;
 	}
 	.middle-card, .side-card {
-		animation: reveal-down .5s 1s cubic-bezier(.68, -0.55, .27, 1.55) forwards;
+		-webkit-animation: reveal-down .5s 1s cubic-bezier(.68, -0.55, .27, 1.55) forwards;
+		        animation: reveal-down .5s 1s cubic-bezier(.68, -0.55, .27, 1.55) forwards;
 	}
 }
